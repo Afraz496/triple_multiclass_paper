@@ -1,0 +1,37 @@
+name: stanfordmultienv
+channels:
+  - conda-forge
+  - defaults
+# (Recommended) conda config --set channel_priority strict
+dependencies:
+  - python=3.10
+  - pip
+  # Core scientific stack (pin to what works together)
+  - numpy=1.23.5
+  - pandas=2.2.2
+  - scipy=1.15.3
+  - scikit-learn=1.5.1
+  - statsmodels=0.14.1
+  - seaborn=0.13.*          # you currently have 0.13.x
+  - matplotlib               # let solver choose a compatible 3.x
+  - openpyxl=3.1.5
+  - pyyaml=6.0.2
+  - ipython=8.12.3
+  - ipykernel=6.29.5
+  - nltk=3.9.1
+  - lightgbm=3.3.5
+  - pymc3=3.11.4            # pulls theano-pymc as needed
+  - bottleneck              # nice-to-have for pandas perf; optional
+  - numexpr                 # optional, speeds some ops
+  - graphviz                # if you use CatBoost/XGB plots; optional
+  - pip:
+      # ML / DL on pip (Windows wheels)
+      - tensorflow==2.15.0
+      - keras==2.15.0
+      - shap==0.44.1
+      - xgboost==3.0.5
+      - catboost==1.2.8
+      - imbalanced-learn==0.12.4
+      # Viz / utils
+      - statannotations==0.7.2
+      - bioinfokit==2.1.4

@@ -1,0 +1,33 @@
+predictor_column : 'label'
+shap_sampler : 100
+#model_names : ['NNet 1', 'NNet 2', 'NNet 3', 'LSTM', 'SVM']
+model_names : ['NNet 3']
+feature_names : [Pyroglutamate,
+2-(4-Hydroxyphenyl)ethanol,
+Lysine_A,
+Lysine_B,
+Arginine_A,
+Arginine_B,
+341>69_A,
+341>69_B,
+341>69_C,
+341>69_D,
+341>69_E,
+349>71_A,
+349>71_B,
+349>71_C,
+349>71_D,
+341>88_A,
+341_88_B,
+453>210_A,
+453>210_B,
+453>210_C,
+497>104,
+497>184_A,
+497>184_B,
+503>147_A,
+503>147_B,
+503>147_C,
+503>147_D,
+]
+
