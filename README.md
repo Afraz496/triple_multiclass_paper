@@ -28,3 +28,4 @@ or
 bash run_multi.sh
 ```
 
+**Note**: you will need to point the path to your Metabolomics multiclass dataset.
